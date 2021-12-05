@@ -107,8 +107,9 @@ swordGroup=new Group();
     }
   
     else if(gameState==END){
-      if(touches[0]>width/2&&touches[0]<width/2+30 ){
+      if(touches[0]>width/2 ){
           gameState = PLAY
+          touches = []
       }
     }
   drawSprites();
